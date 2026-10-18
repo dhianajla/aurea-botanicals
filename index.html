@@ -46,7 +46,7 @@
         <a href="diy.html">DIY Mask</a>
       </nav>
       <!-- TODO: ganti href dengan link official store asli -->
-      <a href="index.html#beli" class="btn btn-primary header-cta">
+      <a href="#beli" class="btn btn-primary header-cta">
         <svg class="icon"><use href="#i-bag"/></svg>
         Beli Produk
       </a>
@@ -94,7 +94,7 @@
     <section id="produk" class="section section-card">
       <div class="wrap">
         <p class="eyebrow">About the Product</p>
-        <h2 class="h2">Satu jar serbuk, dua ritual skincare.</h2>
+        <h2 class="h2">Satu botol serbuk, dua ritual skincare.</h2>
         <div class="about-grid">
           <div class="about-copy">
             <p>
@@ -118,7 +118,7 @@
           </div>
           <div class="stats-grid">
             <div class="stat-card"><p class="stat-value">2-in-1</p><p class="stat-label">Cleanser &amp; Mask</p></div>
-            <div class="stat-card"><p class="stat-value">60 g</p><p class="stat-label">Isi bersih</p></div>
+            <div class="stat-card"><p class="stat-value">50 g</p><p class="stat-label">Isi bersih</p></div>
             <div class="stat-card"><p class="stat-value">0</p><p class="stat-label">Preservative</p></div>
             <div class="stat-card"><p class="stat-value">100%</p><p class="stat-label">Bahan natural</p></div>
           </div>
@@ -140,19 +140,21 @@
               <p>Kaya anthocyanin &amp; antioksidan alami. Membantu kulit tampak lebih cerah, merata, dan terlindungi dari stres lingkungan.</p>
             </div>
             <div class="ing-card">
-              <p class="ing-role">Gentle exfoliant</p>
-              <h3>Rice Powder</h3>
-              <p>Eksfoliator fisik lembut dari beras. Mengangkat sel kulit mati dan membuat tekstur kulit lebih halus.</p>
+              <p class="ing-role">ENZYMATIC EXFOLIANT</p>
+              <h3>Papain</h3>
+              <p>Enzim dari getah pepaya muda. Papain memutus protein (keratin) yang membuat sel kulit mati menempel di permukaan kulit, sehingga sel tersebut lebih mudah terlepas dan kulit terasa lebih halus. Karena bekerja dengan enzim, bukan dengan menggosok keras atau asam kuat, papain umumnya lebih lembut di kulit. Enzim ini baru aktif saat serbuk bertemu air, jadi gunakan pada kulit dan wajah yang basah. Orang yang alergi getah pepaya sebaiknya berhati-hati dan melakukan uji tempel terlebih dahulu.</p>
             </div>
             <div class="ing-card">
-              <p class="ing-role">Oil absorber</p>
-              <h3>Kaolin Clay</h3>
-              <p>Clay yang lembut menyerap kelebihan minyak dan menghasilkan kulit matte yang sehat, tanpa rasa tertarik.</p>
+              <p class="ing-role">GENTLE CHEMICAL EXFOLIANT</p>
+              <h3>Gluconolactone</h3>
+              <p>Bagian dari golongan PHA (polyhydroxy acid). Molekulnya lebih besar daripada AHA, sehingga meresap lebih pelan dan lebih jarang membuat kulit perih atau kemerahan. Selain mengangkat sel kulit mati dengan lembut, gluconolactone menarik air ke kulit agar tetap lembap, juga berfungsi sebagai antioksidan, dan cocok untuk kulit sensitif.</p>
+              <h3>Lactobionic Acid</h3>
+              <p>"Saudara" dari gluconolactone yang juga termasuk golongan PHA. Bahan ini mengangkat sel kulit mati dengan lembut sehingga kulit terasa lebih halus dan tampak lebih merata. Lactobionic acid juga melembapkan, mendukung fungsi pelindung kulit (skin barrier), dan berfungsi sebagai antioksidan. Karena lembut, bahan ini aman untuk kulit sensitif, termasuk kulit setelah prosedur kosmetik.</p>
             </div>
             <div class="ing-card">
-              <p class="ing-role">Soothing botanicals</p>
-              <h3>Chamomile &amp; Rose Petals</h3>
-              <p>Botanikal menenangkan yang membantu meredakan kemerahan dan memberi pengalaman spa di rumah.</p>
+              <p class="ing-role">SKIN BRIGHTENING</p>
+              <h3>Arbutin</h3>
+              <p>Bahan pencerah yang banyak digunakan untuk memudarkan noda kecokelatan. Arbutin secara alami ditemukan pada beberapa tanaman, seperti daun pir, gandum, dan bearberry, dan sudah lama dipakai secara tradisional di Jepang. Arbutin bekerja dengan menghambat aktivitas tirosinase, yaitu enzim yang dibutuhkan kulit untuk membentuk melanin (pigmen penyebab noda cokelat). Dengan begitu, pembentukan noda baru berkurang dan warna kulit tampak lebih cerah dan merata.</p>
             </div>
           </div>
         </div>
@@ -373,6 +375,16 @@
       <div class="footer-bottom">© 2026 Aureá Botanicals. All rights reserved.</div>
     </div>
   </footer>
-
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var target = document.querySelector(this.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.pushState(null, '', this.getAttribute('href'));
+    });
+  });
+</script>
 </body>
 </html>
