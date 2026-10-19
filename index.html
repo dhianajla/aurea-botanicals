@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aureá Botanicals — Red Sorghum Powder Cleanser &amp; Mask</title>
-  <meta name="description" content="Cleanser & mask serbuk 2-in-1 dari red sorghum. Exfoliasi lembut, kulit cerah & sehat. 100% natural powder, tanpa preservative." />
+  <meta name="description" content="Cleanser & mask serbuk 2-in-1 dari red sorghum. Exfoliasi lembut, kulit cerah & sehat. Kenali bahan dan ritual perawatannya." />
   <meta name="author" content="Aureá Botanicals" />
   <meta property="og:title" content="Aureá Botanicals — Red Sorghum Powder Cleanser & Mask" />
   <meta property="og:description" content="Cleanser & mask serbuk 2-in-1 dari red sorghum. Exfoliasi lembut, kulit cerah & sehat." />
@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/motion.css" />
 </head>
 <body>
 
@@ -79,13 +80,12 @@
             </a>
           </div>
           <div class="hero-perks">
-            <span><svg class="icon"><use href="#i-shield"/></svg> Tanpa preservative</span>
             <span><svg class="icon"><use href="#i-droplets"/></svg> Cruelty-free</span>
             <span><svg class="icon"><use href="#i-leaf"/></svg> Botanikal Indonesia</span>
           </div>
         </div>
         <div class="hero-figure">
-          <img src="img.jpeg" alt="Aureá Botanicals Red Sorghum Powder Cleanser & Mask" width="1536" height="1024" />
+          <img src="assets/hero-product.jpg" alt="Aureá Botanicals Red Sorghum Powder Cleanser & Mask" width="1478" height="1064" />
         </div>
       </div>
     </section>
@@ -99,9 +99,7 @@
           <div class="about-copy">
             <p>
               <strong>Aureá Botanicals Red Sorghum Powder Cleanser &amp; Mask</strong> adalah
-              powder cleanser 2-in-1 dari ekstrak red sorghum asli Indonesia. Berbeda dari
-              cleanser cair yang umumnya mengandung air dan preservative, formula serbuk ini
-              100% aktif — tinggal campur dengan sedikit air, dan kamu dapat cleanser yang
+              powder cleanser 2-in-1 dari ekstrak red sorghum asli Indonesia. Formula serbuk ini diaktifkan saat digunakan — tinggal campur dengan sedikit air, dan kamu dapat cleanser yang
               lembut atau masker penuh nutrisi sesuai kebutuhan.
             </p>
             <p>
@@ -112,7 +110,6 @@
             <ul class="check-list">
               <li><svg class="icon"><use href="#i-sparkles"/></svg><span>Cleanser harian yang lembut — cocok untuk semua jenis kulit</span></li>
               <li><svg class="icon"><use href="#i-sparkles"/></svg><span>Mask mingguan untuk brightening &amp; kontrol minyak</span></li>
-              <li><svg class="icon"><use href="#i-sparkles"/></svg><span>Tanpa air berarti tanpa preservative — hanya yang aktif</span></li>
               <li><svg class="icon"><use href="#i-sparkles"/></svg><span>Dapat diaktifkan dengan air, honey, atau yogurt</span></li>
             </ul>
           </div>
@@ -389,7 +386,7 @@
             <div class="benefits-grid">
               <div class="benefit-card">
                 <svg class="icon"><use href="#i-flask"/></svg>
-                <p>Fresh setiap pakai — tanpa preservative</p>
+                <p>Aktifkan fresh setiap pakai</p>
               </div>
               <div class="benefit-card">
                 <svg class="icon"><use href="#i-brush"/></svg>
@@ -493,16 +490,7 @@
       <div class="footer-bottom">© 2026 Aureá Botanicals. All rights reserved.</div>
     </div>
   </footer>
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-    a.addEventListener('click', function (e) {
-      var target = document.querySelector(this.getAttribute('href'));
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      history.pushState(null, '', this.getAttribute('href'));
-    });
-  });
-</script>
+<script src="js/smooth-scroll.js"></script>
+<script type="module" src="js/motion-init.js"></script>
 </body>
 </html>
